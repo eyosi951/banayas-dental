@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+             <!-- this is header one -->
+             <div class="header">
+                <div class="name-container"><h2 class="name"><span>Banayas</span> Dental Clinic</h2></div>
+                <div class="header-contact">
+                    <h4>+251 965 605 966</h4>
+                    <button class="appointment-button" onclick="window.location.href='appointment.html'">Book Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+         <!-- this is navigation -->
+          <nav>
+            <div class="logo"><h1 class="logo">🦷 Banayas</h1></div>
+            <ul id="lists">
+                <li  ><a href="index.html">Home</a></li>
+                <li ><a href="about-us.html">About Us</a></li>
+                <li ><a href="services.html">Services</a></li>
+                <li><a href="appointment.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" >
+                <i class="fa-solid fa-bars"  onclick="toogleMenu()"></i>
+            </div>
+        </nav>
+
+        <div class="service-discription">
+            <h1 class="service-title">🦷 Our Services</h1>
+             <p class="service-disc">At BrightSmile Dental, we offer a full range of personalized dental treatments 
+              designed to keep your smile healthy, radiant, and confident. Whether you're here for routine care 
+              or a complete smile makeover, our expert team is committed to delivering gentle, high-quality service 
+              you can trust.</p>
+          </div>   
+           <div class="service-container">
+  
+          <a href="#" class="services">
+            <img src="images/teeth-cleaning.png" alt="Teeth Cleaning">
+            <h3>Teeth Cleaning</h3>
+            <p>Professional cleaning to keep your smile fresh, bright, and healthy year-round.</p>
+          </a>
+        
+          <a href="#" class="services">
+            <img src="images/teeth-whitning.jpg" alt="Teeth Whitening">
+            <h3>Teeth Whitening</h3>
+            <p>Whiten your teeth safely and effectively with our in-office or take-home treatments.</p>
+          </a>
+        
+          <a href="#" class="services">
+            <img src="images/braces.jpg" alt="Braces & Aligners">
+            <h3>Braces & Aligners</h3>
+            <p>Straighten your teeth discreetly with modern orthodontic options including Invisalign.</p>
+          </a>
+        
+          <a href="#" class="services">
+            <img src="images/dental-implants.jpg" alt="Dental Implants">
+            <h3>Dental Implants</h3>
+            <p>Permanent tooth replacement solutions that look and feel like your natural teeth.</p>
+          </a>
+        
+        </div>
+
+
+        <footer>
+            <div class="footer-container">
+              <!-- Clinic Info -->
+              <div class="footer-column">
+                <h3>Banayas Dental Clinic</h3>
+                <p>Creating confident, healthy smiles with gentle, expert care. We’re proud to be your trusted neighborhood dental clinic.</p>
+              </div>
+          
+              <!-- Quick Links -->
+              <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                <a href="about-us.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                <a href="services.html"><i class="fas fa-chevron-right"></i> Services</a>
+                <a href="appointment.html"><i class="fas fa-chevron-right"></i> Contact</a>
+              </div>
+          
+              <!-- Opening Hours -->
+              <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <p>Mon – Fri: 8:00 AM – 6:00 PM</p>
+                <p>Saturday: 9:00 AM – 1:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+          
+              <!-- Contact Info & Social -->
+              <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +251 965 605 966</p>
+                <p><i class="fas fa-envelope"></i> banayas@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> jemo, A.A</p>
+              
+              </div>
+            </div>
+          
+            <div class="footer-bottom">
+              &copy; 2025 Banayas Dental Clinic. All rights reserved.
+            </div>
+          </footer>   
+</body>
+<script>
+    // Navigation menu toggle
+
+    let  lists= document.getElementById("lists")
+lists.style.maxHeight= "0px"
+
+
+function toogleMenu(){
+ if(lists.style.maxHeight == "0px" ){
+    lists.style.maxHeight= "300px"
+ }
+ else{
+     lists.style.maxHeight ="0px"
+ }
+
+ let menuItems = lists.querySelectorAll("li");
+ menuItems.forEach((item) => {
+ item.addEventListener("click", () => {
+     lists.style.maxHeight = "0px";
+ });
+});
+}
+</script>
+</html>
